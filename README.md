@@ -1,1 +1,2 @@
 # docker-examples
+This repository provides example Dockerfiles that can be used for your projects. We try to provide well-documented Dockerfiles for general use cases that can be extended for your particular needs. 
