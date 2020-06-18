@@ -20,7 +20,7 @@ RUN yarn run build --profile
 FROM nginx:1.17-alpine
 
 # Copy the artifact created during build-stage
-COPY --from=builder /usr/src/app/build /usr/share/nginx/html
+COPY --from=build /usr/src/app/build /usr/share/nginx/html
 
 # Copy nginx-default.conf to /etc/nginx/conf.d/default.conf in container
 COPY ./nginx-default.conf /etc/nginx/conf.d/default.conf
